@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Query Exemplo</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (orientation: landscape) {
+      .container {
+        flex-direction: row;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de Media Query</h1>
+  <div class="container">
+    <div style="background-color: lightcoral; padding: 10px;">Item 1</div>
+    <div style="background-color: lightseagreen; padding: 10px;">Item 2</div>
+    <div style="background-color: lightgoldenrodyellow; padding: 10px;">Item 3</div>
+  </div>
+  <p>Este exemplo modifica a disposição dos itens em modo paisagem.</p>
+</body>
+</html>
