@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Formulário Completo com Campos Obrigatórios</title>
+</head>
+<body>
+    <h1>Formulário de Exemplo</h1>
+    <form action="/enviar" method="post">
+        <!-- Fieldset para agrupar seções do formulário -->
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            
+            <!-- Label e input para nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <!-- Label e input para e-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <!-- Label e input para senha -->
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+            
+            <!-- Label e input para número -->
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="1" max="100" required><br><br>
+            
+            <!-- Label e input para data -->
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required><br><br>
+            
+            <!-- Label e input para URL -->
+            <label for="site">Website:</label>
+            <input type="url" id="site" name="site" required><br><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Preferências</legend>
+            
+            <!-- Label e select para opções de seleção -->
+            <label for="cor">Cor Favorita:</label>
+            <select id="cor" name="cor" required>
+                <option value="">Selecione</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="amarelo">Amarelo</option>
+            </select><br><br>
+            
+            <!-- Label e input de rádio -->
+            <label>Gênero:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+            <label for="feminino">Feminino</label><br><br>
+            
+            <!-- Label e input de checkbox -->
+            <label>Interesses:</label><br>
+            <input type="checkbox" id="esporte" name="interesse" value="esporte">
+            <label for="esporte">Esporte</label><br>
+            <input type="checkbox" id="musica" name="interesse" value="musica">
+            <label for="musica">Música</label><br>
+            <input type="checkbox" id="tecnologia" name="interesse" value="tecnologia">
+            <label for="tecnologia">Tecnologia</label><br><br>
+            
+            <!-- Label e textarea -->
+            <label for="comentarios">Comentários:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50" required></textarea><br><br>
+        </fieldset>
+        
+        <!-- Botões -->
+        <button type="submit">Enviar</button>
+        <button type="reset">Redefinir</button>
+    </form>
+</body>
+</html>
