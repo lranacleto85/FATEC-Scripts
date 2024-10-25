@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte usada no corpo do documento */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    background-color: #f4f4f4; /* Define a cor de fundo do corpo */
+    color: #333; /* Define a cor do texto */
+}
+
+header {
+    background-color: #ffcc00; /* Define a cor de fundo do cabeçalho */
+    padding: 15px 0; /* Adiciona padding em cima e embaixo do cabeçalho */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao cabeçalho */
+}
+
+header h1 {
+    margin: 0; /* Remove a margem do título */
+    font-size: 2.5em; /* Aumenta o tamanho da fonte do título */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o padding da lista */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens de lista na mesma linha */
+    margin-right: 15px; /* Adiciona espaço à direita de cada item de lista */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #333; /* Define a cor do texto dos links */
+    font-weight: bold; /* Define o texto dos links como negrito */
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Muda a cor do texto dos links ao passar o mouse */
+}
+
+main {
+    padding: 30px; /* Adiciona padding ao conteúdo principal */
+    background-color: #fff; /* Define a cor de fundo do conteúdo principal */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao conteúdo principal */
+}
+
+footer {
+    background-color: #ffcc00; /* Define a cor de fundo do rodapé */
+    padding: 15px; /* Adiciona padding ao rodapé */
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao rodapé */
+}
+
+footer address {
+    margin: 0; /* Remove a margem do endereço */
+    font-style: normal; /* Define o estilo da fonte do endereço como normal */
+}
