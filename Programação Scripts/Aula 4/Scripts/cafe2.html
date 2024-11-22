@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bem-vindo ao Café dos Sonhos, um lugar mágico para você desfrutar dos melhores cafés.">
+    <meta name="author" content="Seu Nome">
+    <title>Café dos Sonhos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cafe2.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4 shadow">
+        <div class="container">
+            <h1>Café dos Sonhos</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Sobre Nós</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Reserva</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="carousel-section">
+            <div class="container">
+                <div id="cafeCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#cafeCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#cafeCarousel" data-slide-to="1"></li>
+                        <li data-target="#cafeCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://rehagro.com.br/blog/wp-content/uploads/2019/04/capa-producao-cafe-brasil.jpg" class="d-block w-100" alt="Café 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ambiente Aconchegante</h5>
+                                <p>Desfrute de um lugar acolhedor e confortável.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.awsli.com.br/600x450/18/18885/produto/59953405/896e7bcf46.jpg" class="d-block w-100" alt="Café 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Cafés Especiais</h5>
+                                <p>Saboreie os melhores cafés selecionados.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://blog.coffeemais.com/wp-content/uploads/2022/01/cafe-moido-na-hora-interna-1.jpg" class="d-block w-100" alt="Café 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Eventos Exclusivos</h5>
+                                <p>Participe de eventos únicos e especiais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#cafeCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#cafeCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="hero text-center text-white d-flex flex-column justify-content-center align-items-center" style="height: 60vh; background: rgba(78, 52, 46, 0.7);">
+            <h2>Experiência única com os melhores cafés</h2>
+            <p>Desfrute de um ambiente aconchegante e faça sua reserva agora mesmo!</p>
+            <a href="#" class="btn btn-warning text-dark font-weight-bold">Faça sua Reserva</a>
+        </section>
+    </main>
+    <footer class="bg-dark text-white py-4 text-center shadow">
+        <div class="container">
+            <address>
+                <p>Escrito por <a href="mailto:contato@cafedossonhos.com" class="text-warning">Café dos Sonhos</a>.</p>
+                <p>Visite-nos em:<br>
+                    Rua dos Sonhos, 456<br>
+                    Centro, São Paulo - SP<br>
+                    Brasil</p>
+            </address>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

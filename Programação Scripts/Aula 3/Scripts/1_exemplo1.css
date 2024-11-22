@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte usada no corpo do documento */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+header {
+    background-color: #f8f8f8; /* Define a cor de fundo do cabeçalho */
+    padding: 10px 0; /* Adiciona padding em cima e embaixo do cabeçalho */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+}
+
+header h1 {
+    margin: 0; /* Remove a margem do título */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o padding da lista */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens de lista na mesma linha */
+    margin-right: 10px; /* Adiciona espaço à direita de cada item de lista */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #333; /* Define a cor do texto dos links */
+}
+
+main {
+    padding: 20px; /* Adiciona padding ao conteúdo principal */
+}
+
+footer {
+    background-color: #f8f8f8; /* Define a cor de fundo do rodapé */
+    padding: 10px; /* Adiciona padding ao rodapé */
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+}
+
+footer address {
+    margin: 0; /* Remove a margem do endereço */
+}

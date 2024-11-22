@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Bubbling</title>
+</head>
+<body>
+  <div id="outerDiv">
+    <div id="innerDiv">
+      <button id="myButton">Clique em mim!</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('outerDiv').addEventListener('click', function() {
+      console.log('Clicou na outerDiv');
+    });
+
+    document.getElementById('innerDiv').addEventListener('click', function() {
+      console.log('Clicou na innerDiv');
+    });
+
+    document.getElementById('myButton').addEventListener('click', function() {
+      console.log('Clicou no botão');
+    });
+  </script>
+</body>
+</html>

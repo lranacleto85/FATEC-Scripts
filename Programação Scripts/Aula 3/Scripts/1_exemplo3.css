@@ -1,0 +1,66 @@
+body {
+    font-family: 'Open Sans', sans-serif; /* Define a fonte usada no corpo do documento */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* Define um gradiente de fundo */
+    color: #444; /* Define a cor do texto */
+}
+
+header {
+    background-color: #6a1b9a; /* Define a cor de fundo do cabeçalho */
+    padding: 20px 0; /* Adiciona padding em cima e embaixo do cabeçalho */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao cabeçalho */
+    position: sticky; /* Torna o cabeçalho fixo no topo da página */
+    top: 0; /* Posiciona o cabeçalho no topo */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+header h1 {
+    margin: 0; /* Remove a margem do título */
+    font-size: 3em; /* Aumenta o tamanho da fonte do título */
+    color: #fff; /* Define a cor do texto do título */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o padding da lista */
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens de lista na mesma linha */
+    margin-right: 20px; /* Adiciona espaço à direita de cada item de lista */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Define a cor do texto dos links */
+    font-weight: bold; /* Define o texto dos links como negrito */
+    transition: color 0.3s ease; /* Adiciona uma transição suave na mudança de cor */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Muda a cor do texto dos links ao passar o mouse */
+}
+
+main {
+    padding: 40px; /* Adiciona padding ao conteúdo principal */
+    background-color: rgba(255, 255, 255, 0.9); /* Define uma cor de fundo com transparência */
+    margin: 20px auto; /* Centraliza o conteúdo principal na página */
+    max-width: 800px; /* Define a largura máxima do conteúdo principal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao conteúdo principal */
+    border-radius: 10px; /* Define bordas arredondadas para o conteúdo principal */
+}
+
+footer {
+    background-color: #6a1b9a; /* Define a cor de fundo do rodapé */
+    padding: 20px; /* Adiciona padding ao rodapé */
+    text-align: center; /* Centraliza o texto dentro do rodapé */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao rodapé */
+    color: #fff; /* Define a cor do texto do rodapé */
+}
+
+footer address {
+    margin: 0; /* Remove a margem do endereço */
+    font-style: normal; /* Define o estilo da fonte do endereço como normal */
+}
