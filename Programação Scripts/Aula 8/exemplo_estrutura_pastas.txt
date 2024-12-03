@@ -1,0 +1,46 @@
+my-nodejs-app/
+│
+├── config/         # Configurações da aplicação
+│   ├── default.json
+│   ├── production.json
+│   └── development.json
+│
+├── controllers/    # Lógica de controle (controladores)
+│   ├── userController.js
+│   └── productController.js
+│
+├── models/         # Definições de modelos de dados (modelos)
+│   ├── userModel.js
+│   └── productModel.js
+│
+├── routes/         # Definições de rotas
+│   ├── userRoutes.js
+│   └── productRoutes.js
+│
+├── middleware/     # Middleware personalizado
+│   ├── authMiddleware.js
+│   └── errorHandler.js
+│
+├── services/       # Serviços de negócios (serviços)
+│   ├── userService.js
+│   └── productService.js
+│
+├── utils/          # Funções utilitárias
+│   ├── logger.js
+│   └── validator.js
+│
+├── public/         # Arquivos estáticos (imagens, CSS, JavaScript)
+│   ├── images/
+│   ├── css/
+│   └── js/
+│
+├── views/          # Templates de visualização (se aplicável)
+│   ├── index.ejs
+│   └── layout.ejs
+│
+├── .env            # Variáveis de ambiente
+├── .gitignore      # Arquivos e pastas a serem ignorados pelo Git
+├── package.json    # Dependências e scripts da aplicação
+├── package-lock.json # Bloqueio de versões das dependências
+├── README.md       # Documentação do projeto
+└── server.js       # Ponto de entrada da aplicação
