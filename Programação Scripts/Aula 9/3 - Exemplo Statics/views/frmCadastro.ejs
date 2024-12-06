@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Cadastro</title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-primary p-3">
+      <a href="/" class="navbar-brand">
+        <img src="/img/logo.png" width="70px" height="70px" class="ml-4"
+      /></a>
+    </nav>
+    <div class="container p-4">
+      <div class="card" id="formulario-pergunta">
+        <div class="card-header">
+          <h3>Cadastro de Pergunta</h3>
+        </div>
+        <div class="card-body">
+          <form method="POST" action="/salvarpergunta">
+            <label for="txttitulo">Título</label>
+            <input
+              type="text"
+              placeholder="Título"
+              class="form-control"
+              name="titulo"
+              id="txttitulo"
+            />
+            <br />
+            <label for="txtpergunta">Descrição</label>
+            <textarea
+              id="txtpergunta"
+              placeholder="Descreva sua pergunta aqui"
+              class="form-control"
+              name="descricao"
+            ></textarea
+            ><br />
+            <button class="btn btn-primary">Perguntar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
