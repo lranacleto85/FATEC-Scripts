@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Leonardo Morari e Nicolas Gustavo">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../Styles/geral.css">
+  <link rel="stylesheet" href="../Styles/main.css">
+  <link rel="stylesheet" href="../Styles/form.css">
+  <link rel="stylesheet" href="../Styles/info-modal.css">
+  <link rel="stylesheet" href="../Styles/sucess-modal.css">
+  <title>Drinks Perfeitos</title>
+</head>
+
+<!--Cabeçalho da pagina - Realização de Logoff-->
+<header>
+  <p class="msg-logout">Realizer logout</p>
+  <button class="btn-logout" id="btn-logout" onclick="sair()"><i class="fa-solid fa-right-from-bracket fa-2xl" style="color: #000000;"></i></button>
+</header>
+
+<body>
+
+  <!--Sessão inicial, apresentando a Casa do Drink-->
+  <section class="container-1">
+    <div class="text-container">
+      <p>Venha para</p>
+      <p class="principal">Casa do <span>Drink</span></p>
+      <p>Explore os drinks mais incríveis e surpreenda-se com sabores únicos.</p>
+      <p>Faça já sua reserva</p>
+      <div><button class="btn-registra" type="button" id="openModal" title="Realizar reserva">Realizar reserva</button></div>
+    </div>
+
+    <div class="img-container">
+      <img src="../Img/copo.avif" alt="drinks" title="drinks">
+    </div>
+
+  </section>
+
+  <!--Sessão dos cartões - Exibição de alguns dos produtos-->
+
+  <section class="container-2">
+    <div class="title">
+      <p>Bebidas que Encantam</p>
+      <p>Alguns de nossos <span>Drinks</span></p>
+    </div>
+    <div class="card-container">
+
+      <div class="cards">
+        <div class="cards-header">
+          <img src="../Img/drink-1.avif" alt="Lemon drink" title="Lemon drink">
+        </div>
+        <div class="cards-body">
+          <p>Lemon Drink</p>
+        </div>
+        <div class="card-btn">
+          <button id="openLemonModalBtn">Click aqui</button>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="cards-header">
+          <img src="../Img/drink-2.jpg" alt="Sky drink" title="sky drink">
+        </div>
+        <div class="cards-body">
+          <p>Sky Drink</p>
+        </div>
+        <div class="card-btn">
+          <button id="openSkyModalBtn">Click aqui</button>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="cards-header">
+          <img src="../Img/drink-3.jpeg" alt="raibow drink" title="raibow drink">
+        </div>
+        <div class="cards-body">
+          <p>Raibow Drink</p>
+        </div>
+        <div class="card-btn">
+          <button id="openRainbowModalBtn">Click Aqui</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--Formulário para reserva-->
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Formulário de Reserva</h2>
+      <form id="reservationForm">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="date">Data da Reserva:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" maxlength="14" required>
+
+        <label for="time">Horário:</label>
+        <input type="time" id="time" name="time" required>
+
+        <button type="submit" class="btn-enviar">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal para o Modal de sucesso -->
+
+  <div id="successModal" class="modal">
+    <div class="modal-content-1">
+      <span class="close" id="closeSuccessModal">&times;</span>
+      <div class="text-content">
+        <img src="../Img/check.png" alt="check" title="check">
+        <h2>Formulário enviado com sucesso!</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para o Lemon Drink -->
+
+  <div id="lemonModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="lemonCloseBtn">&times;</span>
+      <h2>Lemon Drink 🍋</h2>
+      <p>O Lemon Drink é uma bebida refrescante, feita com limões frescos, hortelã e água com gás, perfeita para os dias quentes de verão. Sua mistura de sabores cítricos e refrescantes torna essa bebida a escolha ideal para um dia relaxante!</p>
+    </div>
+  </div>
+
+  <!-- Modal para o Sky Drink -->
+
+  <div id="skyModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="skyCloseBtn">&times;</span>
+      <h2>Sky Drink ☁️</h2>
+      <p>O Sky Drink é uma bebida cristalina e refrescante, inspirada nas cores do céu. Feita com uma base de água com gás e um toque de frutas cítricas, como limão e laranja, esta bebida traz uma sensação leve e revigorante.</p>
+    </div>
+  </div>
+
+  <!-- Modal para o Rainbow Drink -->
+
+  <div id="rainbowModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="rainbowCloseBtn">&times;</span>
+      <h2>Rainbow Drink 🌈</h2>
+      <p>O Rainbow Drink é uma bebida colorida e vibrante, como um arco-íris. Feita com uma mistura de frutas tropicais e ingredientes coloridos, cada gole é uma explosão de sabores que vai deixar seu dia mais divertido.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Casa do Drink. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+
+  <script src="../js/form.js"></script>
+  <script src="../js/modal-info.js"></script>
+</body>
+
+</html>
