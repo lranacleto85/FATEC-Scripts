@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="logo">
+        <h1>Showroom Musical</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastrar</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1 class="login-txt">Login</h1>
+    <br>
+    <form class="login-form" onsubmit="event.preventDefault(); verificarLogin();">
+        <label for="usuario">Usuário:</label><br>
+        <input type="text" id="usuario" name="usuario"><br><br>
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha"><br><br>
+        <input type="submit" value="Entrar">
+    </form>
+    <br>
+    <br>
+    <div class="links">
+        <a href="index.html">Voltar para a página inicial</a>
+    </div>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastrar</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Showroom Musical. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

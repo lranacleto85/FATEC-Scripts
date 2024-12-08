@@ -4,7 +4,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.use(express.static("public"));
-
+app.use(express.urlencoded({ extended: true }));
 app.use("/css", express.static("./node_modules/bootstrap/dist/css"));
 app.use("/js", express.static("./node_modules/bootstrap/dist/js"));
 
@@ -22,7 +22,7 @@ app.get("/cadastro", (req, res) => {
   res.render("frmCadastro.ejs");
 });
 
-app.use(express.urlencoded({ extended: true }));
+
 app.post("/salvarpergunta", (req, res) => {
   const { titulo, descricao } = req.body;
 

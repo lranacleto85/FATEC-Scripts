@@ -1,0 +1,67 @@
+h1,h3{
+    /* estilização das fontes */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.logo {
+    /* estilização tamanho das logos das marcas */
+    width: 200px; 
+    height: auto;
+    margin: 10px; 
+}
+
+.sites {
+    /* estilização do tamanho, posição e cor da div */
+    border: 2px solid black; 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    max-width: 350px; 
+    width: 100%;
+    padding: 20px; 
+    background-color: #474747;
+}
+
+.sites a {
+    /* tags "a" para referencia estilizadas como block dentro das classes "sites" */
+    display: block;
+}
+
+figure {
+    /* centralização das logos */
+    margin: 0; 
+    padding: 0; 
+}
+
+.iconNav {
+    /* tamanho do icon presente na navBar */
+    width: 50px; 
+    height: auto;
+    margin: 5px; 
+}
+
+.iconCliente {
+    width: 50px; 
+    height: auto;
+    margin: 5px; 
+}
+
+.container { 
+    border: 2px solid black; 
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; 
+    margin-bottom: 20px;   
+    max-width: 1000px; 
+    width: 100%;
+    padding: 20px; 
+    background-color: #474747;
+}

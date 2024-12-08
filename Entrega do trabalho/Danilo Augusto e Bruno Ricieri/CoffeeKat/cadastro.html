@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>COFFEEKAT</title>
+</head>
+<body>
+    
+<header>
+    <img src="imagens/logo.png" alt="Logo da Loja" />
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#carrinho">Carrinho</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <form class="formlogin" id="formularioCadastro">
+            <h1>Cadastro</h1>
+
+            <label for="pnome">Primeiro Nome:</label>
+            <input type="text" id="pnome" name="pnome" required />
+
+            <label for="snome">Segundo Nome:</label>
+            <input type="text" id="snome" name="snome" required />
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required />
+
+            <div id="erroCadastro" class="erro" style="color: red; margin: 10px 0;"></div>
+            <button type="submit">Cadastre-se</button>
+        </form>
+        <a href="login.html" class="voltarlogin">Já possui cadastro?</a>
+    </section>
+</main>
+
+<footer>
+    <div>
+        <p>danilo.nascimentop79@gmail.com</p>
+        <p>Github DaniloN79</p>
+    </div>
+    <div>
+        <p>brunordcz05@gmail.com</p>
+        <p>Github BrunoRCZ</p>
+    </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

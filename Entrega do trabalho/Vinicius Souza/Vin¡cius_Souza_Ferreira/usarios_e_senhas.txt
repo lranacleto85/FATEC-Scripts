@@ -1,0 +1,7 @@
+USUARIOS E SENHAS:
+
+PARA LOGIN CORRETO: admin e senha: 1234
+
+Cadastro correto:
+Usuario: admin
+CPF valido: 333.111.444-06 (com pontos e traço)

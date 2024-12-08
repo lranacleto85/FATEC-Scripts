@@ -1,0 +1,10 @@
+html, body {
+    height: 100%; /* ocupa 100% do espaço disponível */
+}
+
+.form-container {
+    /* tamanho do container que contém os inputs para login */
+    max-width: 350px;
+    padding: 1rem;
+}
+

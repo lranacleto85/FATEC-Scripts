@@ -1,0 +1,20 @@
+h1,h4{
+    /* estilização das fontes */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    /* estilização dos parágrafos */
+    font-family:Arial;
+    font-size:larger
+}
+.iconNav { 
+    /* estilização referente ao icon presente na navBar */
+    width: 50px; 
+    height: auto;
+    margin: 5px; 
+}
+
+
+/* maior parte da estilização da home foi realizada através do Bootstrap */

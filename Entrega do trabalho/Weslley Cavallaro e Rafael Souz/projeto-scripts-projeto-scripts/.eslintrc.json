@@ -1,0 +1,8 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "no-console": "off",      
+    "no-unused-vars": "off",  
+    "react/react-in-jsx-scope": "off"
+  }
+}
