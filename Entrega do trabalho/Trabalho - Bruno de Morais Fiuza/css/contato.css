@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    padding: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 600px;
+    margin: auto;
+}
+form label {
+    font-weight: bold;
+    margin-top: 15px;
+}
