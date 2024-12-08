@@ -1,0 +1,26 @@
+/* Modal de Sucesso */
+ 
+.modal-content-1 {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.text-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.text-content img {
+  object-fit: cover;
+  margin-bottom: 15px;
+  width: 70px;
+}
