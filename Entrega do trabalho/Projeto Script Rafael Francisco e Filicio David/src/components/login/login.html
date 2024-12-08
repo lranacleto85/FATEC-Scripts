@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Bora F1</h1>
+        <h3>Enter your login credentials</h3>
+
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+
+            <div class="wrap">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <p>Not registered? 
+            <a href="../signup/signup.html" style="text-decoration: none;">
+                Create an account
+            </a>
+        </p>
+    </div>
+
+    <script type="module">
+        import { validateLogin } from './login.js';
+
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); 
+            
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value;
+
+            validateLogin(username, password);
+        });
+    </script>
+</body>
+
+</html>
