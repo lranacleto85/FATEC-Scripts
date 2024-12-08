@@ -1,0 +1,247 @@
+html {
+    height: 100%; /* Garante que a altura total seja usada */
+    margin: 0; /* Remove margens padrão */
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #222;
+    color: #fff;
+    padding: 0.5rem; /* Reduz o tamanho do header e footer */
+    text-align: center;
+}
+
+body {
+    --branco: #FFFFFF;
+    --vermelho: #FF0000;
+    font-family: 'Barlow', sans-serif;
+    height: 4000px;
+}
+
+header, footer {
+    background-color: #222;
+    color: #fff;
+}
+
+.cardNoticia{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    width: 500px;
+}
+.nav-link {
+    color: #fff;
+}
+.banner-1 {
+    background-image: url(../assets/img/carro-sennaa.jpg);
+  }
+.banners {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+}  
+.banners-titulo {
+    --bs-bg-opacity: .2;
+  }
+  /* Parallax Effect */
+.parallax-banner {
+    background: url('seu-banner.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    perspective: 1px;
+    transform-style: preserve-3d;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .banner-text {
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .banner-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    margin-bottom: 10px;
+  }
+  
+  .banner-text p {
+    font-size: 1.5rem;
+    color: #fff; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+    margin: 0;
+  }
+  
+.btn-primary {
+    background-color: #FF0000;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #cc0000;
+}
+
+
+.carousel-inner {
+    transition: transform 0.6s ease;
+}
+
+
+.header {
+    background-color: #343a40;
+    border-bottom: 1px solid #6c757d;
+    padding: 1rem 0;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.equipe-card {
+    width: 18rem;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+.contact-section {
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+}
+
+.contact-form .form-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.contact-form button {
+    font-size: 1rem;
+    padding: 0.75rem;
+}
+.equipe-card {
+    width: 18rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+}
+.read-more {
+    color: #f39c12;
+    font-weight: bold;
+    text-decoration: none;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .header .nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .equipe-card {
+        width: 90%; /* Ajusta largura do cartão */
+        margin: 0 auto; /* Centraliza o cartão */
+    }
+
+    .cardNoticia {
+        height: auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1rem;
+    }
+
+    .read-more {
+        font-size: 0.9rem;
+    }
+
+    .equipe-card {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .cardNoticia {
+        width: 100%;
+        height: auto;
+    }
+}
