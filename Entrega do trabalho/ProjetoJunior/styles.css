@@ -1,0 +1,116 @@
+/*CSS para a pagina de Login*/
+
+#login {
+    background-image: url("images/background-login.jpg");
+    backdrop-filter: blur(3px);
+    background-color: #f8f9fa;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-box {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.h3-with-image {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaço entre a imagem e o texto */
+  }
+
+  /* CSS para o Index */
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 76vh;
+    place-items: center;
+    overflow: hidden;
+    color: #fff;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/Pkm.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5); /* Escurece a imagem */
+    z-index: -2; /* Garante que fique no fundo */
+    background-position: 10%;
+}
+
+main::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Camada de escurecimento */
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    height: 15vh;
+} 
+
+#formPopup{
+    z-index: 1000;
+}
+
+ #home {
+    margin-top: 10%;
+    
+ }
+ 
+ a {
+    color: rgb(230, 22, 91); /* Cor padrão do link */ 
+  }
+  
+  a:hover {
+    color: rgb(32, 190, 85); /* Cor ao passar o mouse */
+  }
+  
+  a:visited {
+    color: purple; /* Cor após o link ser visitado */
+  }
+  
+  a:active {
+    color: green; /* Cor ao clicar no link */
+  }
+

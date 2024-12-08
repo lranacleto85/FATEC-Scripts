@@ -2,5 +2,5 @@
 
 ## Regras:
 
- - Nome da **pasta** com **Nome e Sobrenome** da dupla!
+ - Nome da pasta**ProjetoJunior** Aluno: Caio Henrique Rodrigues Lemes
  - Coloque **todos** os arquivos necessários para rodar o site!
